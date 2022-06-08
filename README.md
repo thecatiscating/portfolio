@@ -4,7 +4,10 @@ The above is a built file, if interested please use it for your own portfolio</h
 
 
 <h2>How to use this templete?</h2>
-``npm init @vitejs/app``
+``
+npm init @vitejs/app
+
+``
 <p1>Use this command in your bash terminal to initiate a vite based file first </p1>
 
 
