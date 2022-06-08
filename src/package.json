@@ -1,0 +1,24 @@
+{
+  "name": "my-universe",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.34",
+    "vite": "^2.8.0"
+  },
+  "dependencies": {
+    "@tweenjs/tween.js": "^18.6.4",
+    "css": "^3.0.0",
+    "eventdispatcher": "^2.6.0",
+    "gsap": "^3.10.4",
+    "three": "^0.137.5",
+    "three.js": "^0.77.1",
+    "threex": "^1.0.0",
+    "vanta": "^0.5.22"
+  }
+}

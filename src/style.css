@@ -1,0 +1,460 @@
+#section1{
+  z-index:-6;
+  
+  width: 100%;
+  height: 100vh;
+   
+  background-color:rgb(0, 0, 0); /*Cover use when the animation doesn't work. ex:mobile*/
+  
+  
+  position:fixed;
+  top:0;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+
+
+:root {
+  
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  
+}
+
+h1  {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  
+  position: relative;
+  top: 20px;
+  left:60px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px rgb(3, 226, 215),
+    0 0 20px rgb(28, 191, 231),
+    
+    
+   0 0 150px rgb(75, 80, 80);
+  
+}
+
+.splash{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index:200;
+  color: white;
+  text-align: center;
+  font-size:56px;
+  line-height: 90vh;
+}
+.splash.display-none{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index:-10;
+  color: white;
+  text-align: center;
+  font-size:56px;
+  line-height: 90vh;
+  transition: all 0.5s;
+}
+@keyframes fadein{
+  to{
+    opacity:1;
+    
+  }
+}
+@keyframes fadeout{
+  to{
+    opacity:0;
+  }
+}
+.fade-in{
+  opacity: 0;
+  animation: fadein 2s ease-in forwards;
+  
+}
+
+h14 {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: small;
+  
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px rgb(3, 226, 215),
+    0 0 20px rgb(28, 191, 231),
+    
+    
+   0 0 150px rgb(75, 80, 80);
+  position: relative;
+  top: 200px;
+  
+  background-color: rgba(0,0,0,.5);
+  
+  border-radius: 1em;
+  
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: rgb(92, 16, 212);
+  outline-width: thick;
+  
+  
+  
+}
+h20 {
+  font-family: elevon, sans-serif;
+  font-weight: 70;
+  font-style: large;
+  
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px rgb(3, 226, 215),
+   
+    
+    
+   0 0 150px rgb(75, 80, 80);
+  position: relative;
+  top: 1400px;
+  
+  background-color: rgba(0,0,0,.5);
+  
+
+  
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: rgb(92, 16, 212);
+  outline-width: thick;
+  
+  font-size: 250%
+}
+
+h2  {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: small;
+  
+  position: relative;
+  top: 500px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px rgb(3, 226, 215),
+    0 0 20px rgb(28, 191, 231),
+    
+    
+   0 0 150px rgb(75, 80, 80);
+  
+  border-radius: 1em;
+  width: 350px;
+  height: 490x;
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: rgb(92, 16, 212);
+  outline-width: thick;
+  
+  
+  
+}
+h3  {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(6, 238, 238);
+  position: relative;
+  top: 1000px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px rgb(3, 226, 215),
+    0 0 20px rgb(28, 191, 231),
+    
+    
+   0 0 150px rgb(75, 80, 80);
+  background-color: rgba(0,0,0,.5);
+
+  border-radius: 1em;
+  width: 440px;
+  height: 40px;
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: rgb(92, 16, 212);
+  outline-width: thick;
+  
+}
+
+
+.popup{
+  width: 700px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: transform(-50%, -50%);
+  text-align: center;
+  
+  padding: 0 30px 30px;
+  color: #333;
+}
+
+.popup img{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+margin-top: -100px;
+
+}
+
+
+.popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #099bf0;
+  color: #ffffff;
+  border: 0;
+  outline:none;
+  font-size: 18px;
+  border-radius: 4px;
+  
+}
+
+
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+.imageColumn2 {
+  position: relative;
+  float: left;
+  width: 30%;
+  padding:10px;
+  
+  top: 95px;;
+  
+}
+.imageColumn3 {
+  position: relative;
+  float: left;
+  width: 30%;
+  padding:10px;
+  
+  top: 95px;;
+  
+}
+.imageColumn4 {
+  position: relative;
+  float: left;
+  width: 31%;
+  padding:10px;
+  
+  top: 95px;;
+  
+}
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+    
+  }
+ 
+
+  
+  
+  h4 {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+    text-decoration: none;
+    text-shadow:     0 1px 0 hsl(174,5%,80%),
+	                 0 2px 0 hsl(174,5%,75%),
+	                 0 3px 0 hsl(174,5%,70%),
+	                 0 4px 0 hsl(174,5%,66%),
+	                 0 5px 0 hsl(174,5%,64%),
+	                 0 6px 0 hsl(174,5%,62%),
+	                 0 7px 0 hsl(174,5%,61%),
+	                 0 8px 0 hsl(174,5%,60%),
+	
+	                 0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0,0,0,.2),
+	              0 10px 10px rgba(0,0,0,.2),
+	              0 20px 20px rgba(0,0,0,.3);
+}
+  
+
+  h4 {
+    color: black;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+    font: 500 90px/1 "Source Sans Pro", Arial, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -3px;
+    padding-top: 90%;
+    top: 3000px
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
+
+
+
+nav ul li a
+{
+  position: relative;
+  top: 1px;
+  left:60px;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 26px;
+  
+
+	
+  
+  color: #083c6d;
+  font-weight: 200;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  
+
+  animation: glow 1s ease-in-out infinite alternate;
+    -webkit-transition: color 2s;
+    transition: color 1s;
+    
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(191, 198, 216), 0 0 20px #fff, 0 0 30px #156e97, 0 0 40px #156e97, 0 0 50px #156e97, 0 0 60px #156e97, 0 0 70px #156e97;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #71dbf5, 0 0 40px #8acaff, 0 0 50px #8acaff, 0 0 60px #8acaff, 0 0 70px #8acaff, 0 0 80px #1f34f7;
+  }
+}
+a {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+  
+  color: rgb(145, 11, 255);
+}
+#myBtn {
+  
+  background-color: rgb(0, 119, 255); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 10em;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
+  
+}
+@keyframes slide {
+  20% {
+    top: 0;
+  }
+  50% {
+    top: -1.2em;
+  }
+  75% {
+    top: -2.4em;
+  }
+  
+}.card {
+  
+  background-color: rgba(0,0,0,.5);
+    color: #fff;
+  border-radius: 1em;
+  width: 880px;
+  height: 490px;
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: rgb(92, 16, 212);
+  outline-width: thick;
+  
+  
+  
+ 
+  
+}
