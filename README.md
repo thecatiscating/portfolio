@@ -4,10 +4,10 @@ The above is a built file, if interested please use it for your own portfolio</h
 
 
 <h2>How to use this templete?</h2>
-``
-npm init @vitejs/app
 
-``
+'npm init @vitejs/app'
+
+
 <p1>Use this command in your bash terminal to initiate a vite based file first </p1>
 
 
@@ -24,3 +24,6 @@ npm init @vitejs/app
 
 
 <h2>Building the files and send for deployment on the website</h2>
+<p1> type 'npm run built' in the terminal and your built files will be stored in your local computer</p1>
+navigate where your files are stored at and type 'surge'
+Well done! your website is up and on the web :D
