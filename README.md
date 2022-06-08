@@ -1,5 +1,5 @@
 <h1>Hello there! Welcome to my portfoilo!
-i am linx
+I am linxi
 The above is the source code, if interested please use it for your own portfolio</h1>
 
 www.lnxport.tech
