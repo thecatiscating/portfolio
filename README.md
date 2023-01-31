@@ -2,7 +2,7 @@
 I am linxi
 The above is the source code, if interested please use it for your own portfolio</h1>
 
-www.lnxport.tech
+www.lnxport.surge.sh
 
 <h2>How to use this templete?</h2>
 
